@@ -22,9 +22,16 @@ permitir que o usuário consiga:
 
 💡Tecnologias Utlizadas:
 
-   HTML5
+   - HTML5
  
-   CSS3
+   - CSS3
  
-   JavaScript
- 
+   - JavaScript
+
+   - Fonte Awesome - ícones
+
+
+ ⚙️ Observações:
+
+ - Dados Salvos no LocalStorage
+ - Projeto feito para Estudo
