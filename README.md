@@ -8,9 +8,13 @@ O objetivo deste projeto, além de aprimorar meus conhecimentos nas linguagens c
 permitir que o usuário consiga:
 
 ✅Adiconar Tarefas e Editá-las.
+
 ✏️Elencar sua prioridade.
+
 🗑️ Excluí-las.
+
 💻Pesquisar tarefas
+
 
 💡Tecnologias Utlizadas:
  HTML5
