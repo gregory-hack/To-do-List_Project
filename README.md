@@ -3,7 +3,7 @@
 <img width="975" height="702" alt="image" src="https://github.com/user-attachments/assets/714a34fb-d5a8-4f97-8b5a-ecf7d410a3cf" />
 
 
-:Pushpin: Sobre o Projeto
+📌 Sobre o Projeto
 
 Projeto de Aprendizagem para a Disciplina de Fundamentos de Programação WEB. 
 Criação de uma To-Do List para gerenciamento de tarefas diárias, utilizando as tecnologias de HTML, CSS E JavaScript Puro.
