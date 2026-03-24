@@ -75,12 +75,17 @@ textarea {
 
 /* Container principal */
 .todo-container {
-  max-width: 600px;
+  max-width: 95vw;
   margin: 3rem auto;
+  width: fit-content;
   background-color: #fdfdfd;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 15px;
   display: block;
+  min-width: 600px;
+
+
+
 }
 
 /* Header */
@@ -169,10 +174,13 @@ textarea {
 }
 /* Tabela */
 .listartarefas td {
-  white-space: nowrap;
-  max-width: 200px;
+  white-space: normal;
+  max-width: 400px;
   overflow: hidden;
   text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 10px;
 }
 
 .listartarefas td button {
@@ -181,10 +189,8 @@ textarea {
 }
 
 .list-table {
-  margin-top: 20px;
-  padding: auto;
-  width: 100%;
-  display: block;
+ margin-top: 20px;
+ width: 100%;
 }
 
 .listartarefas {
@@ -193,6 +199,8 @@ textarea {
   min-width: 500px;
   white-space: normal;
   overflow: visible;
+  table-layout: auto;
+  margin-left: 0;
 }
 
 .listartarefas th,
@@ -203,6 +211,18 @@ textarea {
   margin: 2px;
   font-size: 0.8rem;
   padding: 8px 4px;
+}
+
+.listartarefas td:last-child {
+  display: flex;
+  white-space: nowrap !important;
+  text-align: center;
+  min-width: 150px;
+  width: auto;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 .listartarefas th {
