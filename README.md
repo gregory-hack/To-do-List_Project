@@ -22,9 +22,9 @@ permitir que o usuário consiga:
 
 💡Tecnologias Utlizadas:
 
- HTML5
+   HTML5
  
- CSS3
+   CSS3
  
- JavaScript
+   JavaScript
  
