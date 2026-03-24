@@ -16,7 +16,11 @@ permitir que o usuário consiga:
 💻Pesquisar tarefas
 
 
+
 💡Tecnologias Utlizadas:
  HTML5
+ 
  CSS3
+ 
  JavaScript
+ 
