@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Avançado</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/MediaQueries.css">
+
+    <!-- Font Awesome- ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="assets/js/script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="todo-container">
+      
+      <!-- HEADER -->
+      <header>
+        <h1>Lista de Tarefas</h1>
+        <h2>Gerencie suas tarefas diárias</h2>
+      </header>
+      <p id="mensagem-vazia" class="hide"> Não há tarefas cadastradas</p>
+
+      <!--ADICIONAR TAREFAS -->
+      <form id="todo-form">
+        <p>Adicionar tarefa</p>
+        <div class="form-control">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="O que você vai fazer?"
+          />
+          <select id="prioridade" required>
+            <option value="" disabled selected>Prioridade</option>
+            <option value="Baixa">Baixa</option>
+            <option value="Média">Média</option>
+            <option value="Alta">Alta</option>
+          </select>
+
+          <button type="submit">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+      </form>
+
+      <!-- DESCRIÇÃO -->
+      <div class="campo">
+        <p>Descrição</p>
+        <textarea
+          id="descricao"
+          cols="25"
+          rows="3"
+          maxlength="80"
+          placeholder="Descreva sua tarefa"
+        ></textarea>
+      </div>
+
+      <!-- EDITAR -->
+      <form id="edit-form" class="hide">
+        <p>Editar</p>
+        <div class="form-control">
+          <input type="text" id="edit-input">
+          <button type="submit">
+            <i class="fa-solid fa-pen"></i>
+          </button>
+        </div>
+        <button id="cancel-edit-btn" type="button">Cancelar</button>
+      </form>
+
+      <!-- TOOLBAR -->
+      <div id="toolbar">
+        <div id="search">
+          <h4>Pesquisar:</h4>
+          <form>
+            <input type="text" id="search-input" placeholder="Buscar..." />
+            <button type="button" id="erase-button">
+              <i class="fa-solid fa-delete-left"></i>
+            </button>
+          </form>
+        </div>
+        
+        <!--FILTRO-->
+        <div id="filter">
+          <h4>Filtrar</h4>
+          <select id="filter-select">
+            <option value="all">Todos</option>
+            <option value="done">Concluído</option>
+            <option value="todo">Pendente</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- TABELA DE TAREFAS -->
+      <div class="list-table">
+        <table class="listartarefas">
+          <thead>
+            <tr>
+              <th>Título</th>
+              <th>Descrição</th>
+              <th>Prioridade</th>
+              <th>Data</th>
+              <th>Status</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="tabelaTarefas"></tbody>
+        </table>
+      </div>
+    </div>
+    <footer class="footer">
+     <p>Projeto de Aprendizagem Fundamentos de Programação Web</p>
+     <p>Desenvolvido por: Gregory Hack</p>
+    </footer>
+  </body>
+</html>

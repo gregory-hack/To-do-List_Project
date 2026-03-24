@@ -1,0 +1,24 @@
+
+/* MediaQueries.css */
+
+@media screen and (max-width: 768px) {
+    .todo-container {
+        width: 95%;
+        margin: 1rem auto;
+    }
+
+    #toolbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .list-table {
+        overflow-x: auto;
+        display: block;
+    }
+
+    input, select, button {
+        width: 100% !important;
+        margin-bottom: 8px;
+    }
+}
